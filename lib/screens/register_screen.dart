@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
-import '../constants/app_spacing.dart';
 import '../widgets/app_background.dart';
 import '../widgets/light_status_bar.dart';
 import '../widgets/gradient_header.dart';
@@ -105,13 +104,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         onSubmit: _handleRegister,
                         isLoading: _isLoading,
                       ),
-                      const SizedBox(height: AppSpacing.xLarge),
+                      const SizedBox(height: 24),
                       RichTextLink(
                         normalText: 'Již máte účet? ',
                         linkText: 'Přihlásit se',
                         onTap: () => Navigator.pop(context),
                       ),
-                      const SizedBox(height: AppSpacing.xxLarge),
+                      const SizedBox(height: 24),
                     ],
                   ),
                 ),

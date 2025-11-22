@@ -15,7 +15,7 @@ class LoginCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: 210,
+      top: 240,
       left: AppSpacing.xxLarge,
       right: AppSpacing.xxLarge,
       child: Container(

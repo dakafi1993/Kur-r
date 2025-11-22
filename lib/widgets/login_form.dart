@@ -39,9 +39,11 @@ class _LoginFormState extends State<LoginForm> {
     return Form(
       key: widget.formKey,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Text('Vítejte zpět', style: AppTextStyles.heading2),
+          const Center(
+            child: Text('Vítejte zpět', style: AppTextStyles.heading2),
+          ),
           const SizedBox(height: AppSpacing.xxLarge),
 
           CustomTextField(

@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
 import '../constants/app_gradients.dart';
-import '../constants/app_spacing.dart';
 import '../constants/app_radius.dart';
+import '../constants/app_spacing.dart';
 import '../constants/app_shadows.dart';
 import '../constants/app_text_styles.dart';
-import '../constants/app_font_sizes.dart';
 
 class GradientHeader extends StatelessWidget {
   final String title;
@@ -41,14 +40,10 @@ class GradientHeader extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppRadius.xLarge),
                 boxShadow: [AppShadows.logo],
               ),
-              child: Center(
-                child: Text(
-                  'K',
-                  style: AppTextStyles.heading1.copyWith(
-                    color: AppColors.primary,
-                    fontSize: AppFontSizes.massive,
-                  ),
-                ),
+              child: const Icon(
+                Icons.local_shipping,
+                size: 40,
+                color: AppColors.primary,
               ),
             ),
           const SizedBox(height: AppSpacing.large),

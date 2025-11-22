@@ -15,16 +15,13 @@ class RegisterCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Transform.translate(
-      offset: const Offset(0, -16),
+      offset: const Offset(0, -40),
       child: Container(
-        width: double.infinity,
+        margin: const EdgeInsets.symmetric(horizontal: AppSpacing.xxLarge),
         padding: const EdgeInsets.all(AppSpacing.xxLarge),
         decoration: BoxDecoration(
           color: AppColors.white,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(AppRadius.xLarge),
-            topRight: Radius.circular(AppRadius.xLarge),
-          ),
+          borderRadius: BorderRadius.circular(AppRadius.large),
           boxShadow: [AppShadows.card],
         ),
         child: child,

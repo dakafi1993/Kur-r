@@ -46,9 +46,11 @@ class _RegisterFormState extends State<RegisterForm> {
     return Form(
       key: widget.formKey,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Text('Vytvořte si účet', style: AppTextStyles.heading2),
+          const Center(
+            child: Text('Vytvořte si účet', style: AppTextStyles.heading2),
+          ),
           const SizedBox(height: AppSpacing.xxLarge),
 
           CustomTextField(

@@ -6,6 +6,13 @@ class AppGradients {
   // Prevent instantiation
   AppGradients._();
   
+  // Primary gradient
+  static const LinearGradient primary = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [AppColors.primary, AppColors.secondary],
+  );
+  
   // Header gradient
   static const LinearGradient header = LinearGradient(
     begin: Alignment.topLeft,

@@ -8,6 +8,12 @@ class AppTextStyles {
   AppTextStyles._();
   
   // Headings
+  static const TextStyle h1 = TextStyle(
+    fontSize: AppFontSizes.xxxLarge,
+    fontWeight: FontWeight.bold,
+    color: AppColors.white,
+  );
+  
   static const TextStyle heading1 = TextStyle(
     fontSize: AppFontSizes.xxxLarge,
     fontWeight: FontWeight.bold,
@@ -27,9 +33,25 @@ class AppTextStyles {
   );
   
   // Body text
+  static const TextStyle body = TextStyle(
+    fontSize: AppFontSizes.regular,
+    color: AppColors.black,
+  );
+  
   static const TextStyle bodyLarge = TextStyle(
     fontSize: AppFontSizes.large,
     color: AppColors.black,
+  );
+  
+  static const TextStyle subtitle = TextStyle(
+    fontSize: AppFontSizes.regular,
+    fontWeight: FontWeight.w600,
+    color: AppColors.black,
+  );
+  
+  static const TextStyle caption = TextStyle(
+    fontSize: AppFontSizes.small,
+    color: AppColors.grey,
   );
   
   static const TextStyle bodyMedium = TextStyle(

@@ -6,6 +6,7 @@ import '../widgets/gradient_header.dart';
 import '../widgets/register_card.dart';
 import '../widgets/register_form.dart';
 import '../widgets/rich_text_link.dart';
+import 'document_verification_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -52,10 +53,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
       );
       
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Registrace úspěšná! Přejděte k ověření.'),
-            backgroundColor: Colors.green,
+        // Navigate to document verification
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (context) => const DocumentVerificationScreen(),
           ),
         );
       }
